@@ -1,6 +1,7 @@
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.transform.Scale;
 import javafx.stage.Stage;
 import javafx.application.Application;
@@ -15,6 +16,12 @@ public class App extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainScene.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
+
+        Image icon = new Image(getClass().getResourceAsStream("resources/icon.png"));
+
+        stage.setResizable(false);
+        stage.setTitle("MP3player by Khuslee");
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.show();
     }
