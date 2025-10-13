@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -15,7 +16,11 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -26,6 +31,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class controller implements Initializable {
@@ -72,6 +78,9 @@ public class controller implements Initializable {
     private Media media;
     private MediaPlayer mediaPlayer;
     private boolean running;
+    private Stage stage;
+    private Scene scene;
+
 
     public void beginTimer(){
         timer = new Timer();
@@ -94,6 +103,18 @@ public class controller implements Initializable {
     public void cancelTimer(){
         running = false;
         timer.cancel();
+
+    }
+
+    @FXML
+    public void SongListButton(ActionEvent event) throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("SongsPage.fxml"));
+        Parent root = loader.load();
+
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow(); // <-- get Stage safely
+        stage.setScene(new Scene(root));
+        pause(event);
+        stage.show();
 
     }
     
@@ -198,21 +219,32 @@ public class controller implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         try {
-            URL dirUrl = getClass().getResource("/resources");
-            Path dir = Paths.get(dirUrl.toURI());
-                songs = Files.list(dir)
+        Path songsDir = Paths.get("songs"); // folder beside your JAR or EXE
+        songs = new ArrayList<>();
+
+        if (Files.isDirectory(songsDir)) {
+            try (var stream = Files.list(songsDir)) {
+                songs = stream
                         .filter(Files::isRegularFile)
-                        .filter(p-> {
-                            String song = p.getFileName().toString().toLowerCase(Locale.ROOT);
-                            return song.endsWith("mp3") || song.endsWith(".wav")|| song.endsWith(".m4a");   
+                        .filter(p -> {
+                            String name = p.getFileName().toString().toLowerCase(Locale.ROOT);
+                            return name.endsWith(".mp3") || name.endsWith(".wav") || name.endsWith(".m4a");
                         })
                         .map(p -> new Media(p.toUri().toString()))
                         .collect(Collectors.toList());
-        } catch (Exception e) {
-            System.out.println("Error loading songs");
-            e.printStackTrace();
-            songs = new ArrayList<>();
+            }
         }
+
+        if (songs.isEmpty()) {
+            System.out.println("No songs found in 'songs' folder.");
+        }
+
+    } catch (Exception e) {
+        System.out.println("Error loading songs");
+        e.printStackTrace();
+        songs = new ArrayList<>();
+    }
+
 
         media = new Media(songs.get(songNumber).getSource());
         mediaPlayer = new MediaPlayer(media);

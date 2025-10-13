@@ -1,0 +1,520 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = C:\Program Files\Java\jdk-24
+Substitute:	PATH = C:\Program Files\Java\jdk-24\bin;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\apache-maven-3.9.x\apache-maven-3.9.11\bin;C:\Users\khusl\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Java\jdk-24\bin
+JRE paths:	C:\Program Files\Java\jdk-24;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Java\jdk-24\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\dotnet\;C:\apache-maven-3.9.x\apache-maven-3.9.11\bin;C:\Users\khusl\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\Java\jdk-24\bin
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-jar "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe"
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-24
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-jar "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe"
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-24
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-jar "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe"
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App.Main
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App.Main
+Args length:	113/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App.main
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App.main
+Args length:	113/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App.App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App.App
+Args length:	112/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: Yes
+Java min ver:	1.024.000
+Java max ver:	
+Substitute:	EXEDIR = C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player
+JRE paths:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime 
+Check launcher:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\runtime \bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Version string: 1.008.000 / 64-Bit (Ignore)
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_461
+Version string: 1.008.000_461 / 64-Bit (Ignore)
+Ignore:		1.008.000_461
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\21.0.8
+Version string: 1.021.000_008 / 64-Bit (Ignore)
+Ignore:		1.021.000_008
+Check:		SOFTWARE\JavaSoft\JDK\22
+Version string: 1.022.000 / 64-Bit (Ignore)
+Ignore:		1.022.000
+Check:		SOFTWARE\JavaSoft\JDK\24.0.2
+Version string: 1.024.000_002 / 64-Bit (OK)
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Match:		1.024.000_002
+Runtime used:	1.024.000_002 (64-bit)
+Main class:	App
+Add classpath:	Mp3player.jar
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe;Mp3player.jar" App
+Args length:	108/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-24
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	-jar "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe"
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-24
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	--module-path "C:\Java\javafx-sdk-24.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.media -jar "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe"
+Args length:	185/32768 chars
+Exit code:	0
+
+
+Version:	3.50
+CmdLine:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+JRE paths:	C:\Program Files\Java\jdk-24
+Check launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe (OK)
+Version string: 1.024.000_002 / 64-Bit (OK)
+Launcher:	C:\Program Files\Java\jdk-24\bin\javaw.exe
+Launcher args:	--module-path "C:\Java\javafx-sdk-24.0.2\lib" --add-modules javafx.controls,javafx.fxml,javafx.media -jar "C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.exe"
+Args length:	185/32768 chars
+Exit code:	0

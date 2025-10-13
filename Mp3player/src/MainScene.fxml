@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="736.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller">
    <children>
       <Label fx:id="songName" alignment="CENTER" layoutY="14.0" prefHeight="54.0" prefWidth="736.0" text="MP3 player" textFill="RED">
@@ -43,7 +42,7 @@
          </font>
       </Button>
       <Slider fx:id="volSlider" layoutX="558.0" layoutY="120.0" orientation="VERTICAL" prefHeight="78.0" prefWidth="14.0" value="50.0" />
-      <Button fx:id="songListButton" alignment="CENTER" contentDisplay="CENTER" layoutX="589.0" layoutY="140.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="131.0" text=" Songs List" textAlignment="CENTER" textFill="RED">
+      <Button fx:id="songListButton" alignment="CENTER" contentDisplay="CENTER" layoutX="589.0" layoutY="140.0" mnemonicParsing="false" onAction="#SongListButton" prefHeight="59.0" prefWidth="131.0" text=" Songs List" textAlignment="CENTER" textFill="RED">
          <font>
             <Font name="Cascadia Code Regular" size="16.0" />
          </font>
