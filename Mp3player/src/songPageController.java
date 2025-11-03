@@ -53,23 +53,19 @@ public class songPageController implements Initializable {
     
     private void loadSongsFromFolder() {
         try {
-            // Get the songs folder path
-            File songsFolder = new File("songs");
-            
-            
-            // Get all files from the songs folder
+           
+            File songsFolder = new File("songs"); 
             File[] files = songsFolder.listFiles();
             
             if (files != null) {
                 for (File file : files) {
-                    // Filter only mp3 files (you can add more extensions)
                     if (file.isFile() && file.getName().toLowerCase().endsWith(".mp3")) {
                         songs.add(file.getName());
                     }
                 }
                 
                 if (songs.isEmpty()) {
-                    label.setText("No MP3 files found in songs folder");
+                    label.setText("no songs");
                 }
             }
         } catch (Exception e) {
@@ -79,26 +75,23 @@ public class songPageController implements Initializable {
     }
     
     
-    // Optional: Method to refresh the song list
     @FXML
     private void refreshSongList() {
         songs.clear();
         loadSongsFromFolder();
     }
     
-    // Add button functionality
     @FXML
     private void handleAddButton() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select MP3 Files");
         
-        // Set extension filter to only show audio files
         FileChooser.ExtensionFilter audioFilter = new FileChooser.ExtensionFilter(
             "Audio Files", "*.mp3", "*.wav", "*.m4a", "*.flac"
         );
         fileChooser.getExtensionFilters().add(audioFilter);
         
-        // Allow multiple file selection
+        //Multiple file selection
         Stage stage = (Stage) addButton.getScene().getWindow();
         List<File> selectedFiles = fileChooser.showOpenMultipleDialog(stage);
         
@@ -155,7 +148,7 @@ public class songPageController implements Initializable {
     @FXML
     private void handleDeleteButton() {
         String selectedSong = musicList.getSelectionModel().getSelectedItem();
-        
+
         if (selectedSong == null) {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("No Selection");
@@ -164,37 +157,47 @@ public class songPageController implements Initializable {
             alert.showAndWait();
             return;
         }
-        
+
         // Confirmation dialog
         Alert confirmAlert = new Alert(AlertType.CONFIRMATION);
         confirmAlert.setTitle("Confirm Delete");
+        confirmAlert.setHeaderText(null);
         confirmAlert.setContentText("Are you sure you want to delete \"" + selectedSong + "\"?");
-        
-        if (confirmAlert.showAndWait().get().getText().equals("OK")) {
+        var result = confirmAlert.showAndWait();
+        if (result.isEmpty() || result.get().getButtonData().isCancelButton()) return;
+
+        File fileOnDisk = new File("songs", selectedSong);
+
+        try {
+            // try to delete the file
+            Files.delete(fileOnDisk.toPath());
+            songs.remove(selectedSong);
+
+        } catch (java.nio.file.FileSystemException e) {
+            // If file is locked by the MediaPlayer, release and retry
+            PlayerRegistry.release();
             try {
-                File fileToDelete = new File("songs/" + selectedSong);
-                
-                if (fileToDelete.exists()) {
-                    if (fileToDelete.delete()) {
-                        songs.remove(selectedSong);
-                    } else {
-                        throw new IOException("Unable to delete file");
-                    }
-                } else {
-                    Alert alert = new Alert(AlertType.ERROR);
-                    alert.setTitle("File Not Found");
-                    alert.setHeaderText("Cannot delete song");
-                    alert.setContentText("The file does not exist in the songs folder.");
-                    alert.showAndWait();
-                }
-            } catch (Exception e) {
-                Alert alert = new Alert(AlertType.ERROR);
-                alert.setTitle("Delete Error");
-                alert.setHeaderText("Failed to delete song");
-                alert.setContentText("Error: " + e.getMessage());
-                alert.showAndWait();
-                e.printStackTrace();
+                Thread.sleep(150);             // small delay for Windows file unlock
+                Files.delete(fileOnDisk.toPath());
+                songs.remove(selectedSong);
+            } catch (Exception e2) {
+                Alert error = new Alert(AlertType.ERROR);
+                error.setTitle("Delete Failed");
+                error.setHeaderText("Couldn't delete: " + selectedSong);
+                error.setContentText("The file is still in use or locked.\n\nDetails: " + e2.getMessage());
+                error.showAndWait();
             }
+
+        } catch (Exception e) {
+            Alert error = new Alert(AlertType.ERROR);
+            error.setTitle("Delete Failed");
+            error.setHeaderText("Couldn't delete: " + selectedSong);
+            error.setContentText("Details: " + e.getMessage());
+            error.showAndWait();
+        }
+
+        if (songs.isEmpty()) {
+            label.setText("No songs");
         }
     }
 }

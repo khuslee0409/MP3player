@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3player.jar</jar>
+  <outfile>C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\Mp3Player.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\khusl\OneDrive\Documents\MP3player\MP3player\Mp3player\src\resources\mp3icon.ico</icon>
+  <classPath>
+    <mainClass>App</mainClass>
+    <cp>lib/*.jar</cp>
+  </classPath>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <opt>--module-path &quot;C:\Java\javafx-sdk-24.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.media</opt>
+  </jre>
+</launch4jConfig>

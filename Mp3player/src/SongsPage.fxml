@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="songPageController">
    <children>
       <Button fx:id="addButton" layoutX="90.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleAddButton" prefHeight="46.0" prefWidth="104.0" text="Add" textFill="RED">
@@ -14,7 +13,7 @@
             <Font name="Cascadia Code Regular" size="18.0" />
          </font>
       </Button>
-      <Label fx:id="label" alignment="CENTER" layoutX="208.0" layoutY="9.0" text="Song list" textAlignment="CENTER" textFill="RED">
+      <Label fx:id="label" alignment="CENTER" contentDisplay="LEFT" layoutX="208.0" layoutY="9.0" text="Song list" textFill="RED">
          <font>
             <Font name="Cascadia Code Regular" size="39.0" />
          </font>

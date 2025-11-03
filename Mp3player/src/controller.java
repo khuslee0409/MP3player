@@ -83,20 +83,18 @@ public class controller implements Initializable {
 
 
     public void beginTimer(){
+        if (mediaPlayer == null) return;
         timer = new Timer();
         task = new TimerTask() {
             public void run(){
                 running = true;
                 double current = mediaPlayer.getCurrentTime().toSeconds();
                 double end = media.getDuration().toSeconds();
-                progressBar.setProgress(current/end);
-
-                if(current/end == 1){
-                    cancelTimer();
-                }
+                if (end <= 0) return; // avoid divide by 0
+                progressBar.setProgress(current / end);
+                if (current / end >= 0.999) cancelTimer();
             }
         };
-
         timer.scheduleAtFixedRate(task, 1000, 1000);
     }
 
@@ -108,19 +106,33 @@ public class controller implements Initializable {
 
     @FXML
     public void SongListButton(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("SongsPage.fxml"));
-        Parent root = loader.load();
 
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow(); // <-- get Stage safely
-        stage.setScene(new Scene(root));
-        pause(event);
-        stage.show();
+        try {
+            if (timer != null) cancelTimer();
+            if (mediaPlayer != null) {
+                mediaPlayer.stop();
+                mediaPlayer.dispose();
+            }
+        } catch (Exception ignore) {}
 
-    }
+            PlayerRegistry.release();
+
+
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SongsPage.fxml"));
+            Parent root = loader.load();
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        }
+    
     
 
     @FXML
     void nextSong(ActionEvent event) {
+        if (mediaPlayer == null || songs.isEmpty()) return;
+
         if(songNumber < songs.size()-1){
             songNumber++;
             mediaPlayer.stop();
@@ -153,6 +165,7 @@ public class controller implements Initializable {
 
     @FXML
     void pause(ActionEvent event) {
+        if (mediaPlayer == null) return;
         cancelTimer();
         mediaPlayer.pause();
 
@@ -160,6 +173,7 @@ public class controller implements Initializable {
 
     @FXML
     void play(ActionEvent event) {
+        if (mediaPlayer == null) return;
         beginTimer();
         speedChange(null);
         mediaPlayer.setVolume(volSlider.getValue()*0.01);
@@ -169,6 +183,8 @@ public class controller implements Initializable {
 
     @FXML
     void prevSong(ActionEvent event) {
+        if (mediaPlayer == null || songs.isEmpty()) return;
+
         if(songNumber > 0){
             songNumber--    ;
             mediaPlayer.stop();
@@ -201,6 +217,8 @@ public class controller implements Initializable {
 
     @FXML
     void reset(ActionEvent event) {
+        if (mediaPlayer == null) return;
+
         progressBar.setProgress(0);
         mediaPlayer.seek(Duration.seconds(0.0));
 
@@ -236,8 +254,23 @@ public class controller implements Initializable {
         }
 
         if (songs.isEmpty()) {
-            System.out.println("No songs found in 'songs' folder.");
+            if (timer != null) cancelTimer();
+            if (mediaPlayer != null) {
+                mediaPlayer.stop();
+                mediaPlayer.dispose();
+            }
+            PlayerRegistry.release();
+
+            mediaPlayer = null;
+            media = null;
+            songName.setText("No songs yet");
+            progressBar.setProgress(0);
+            setPlayerEnabled(false);
+            return; 
         }
+            setPlayerEnabled(true);
+            initPlayer(0);
+           
 
     } catch (Exception e) {
         System.out.println("Error loading songs");
@@ -248,6 +281,8 @@ public class controller implements Initializable {
 
         media = new Media(songs.get(songNumber).getSource());
         mediaPlayer = new MediaPlayer(media);
+        PlayerRegistry.set(mediaPlayer, media);
+
 
         String source = songs.get(songNumber).getSource();
         String fileName = Paths.get(java.net.URI.create(source)).getFileName().toString();
@@ -269,14 +304,33 @@ public class controller implements Initializable {
         });
 
         progressBar.setStyle("-fx-accent : red");
-
-
-
-        
-
-
         
     }
+
+    private void setPlayerEnabled(boolean enabled) {
+    playButton.setDisable(!enabled);
+    pauseButton.setDisable(!enabled);
+    nextButton.setDisable(!enabled);
+    prevButton.setDisable(!enabled);
+    restartButton.setDisable(!enabled);
+    volSlider.setDisable(!enabled);
+    speedSet.setDisable(!enabled);
+}
+
+private void initPlayer(int index) {
+    songNumber = index;
+    media = new Media(songs.get(songNumber).getSource());
+    mediaPlayer = new MediaPlayer(media);
+    // if you use the registry:
+    PlayerRegistry.set(mediaPlayer, media);
+
+    String source = songs.get(songNumber).getSource();
+    String fileName = java.nio.file.Paths.get(java.net.URI.create(source)).getFileName().toString();
+    songName.setText(fileName);
+}
+
+
+
 
 
 }
